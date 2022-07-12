@@ -8,13 +8,21 @@ import {
   images,
   dummyData,
 } from "../../constants";
+import { StyleSheet } from "react-native";
+
+import Icons from 'react-native-vector-icons/MaterialIcons'
 const ItemDetail = ({ route, navigation }) => {
     const { item } = route.params;
 
   return (
     <View style={{ flex: 1, backgroundColor: COLORS.white }}>
       {/* Body */}
-      <Text style={{color:COLORS.black}}>Details Screen</Text>
+      
+
+      <View style={styles.imageContainer}>
+        <Image source={item.image} style={{resizeMode:"contain", flex:1}}/>
+      </View>
+
       <Text>Name: {JSON.stringify(item.name)}</Text>
       <Text>Brief: {JSON.stringify(item.brief)}</Text>
       <Text>Description: {JSON.stringify(item.description)}</Text>
@@ -26,3 +34,13 @@ const ItemDetail = ({ route, navigation }) => {
 };
 
 export default ItemDetail;
+
+const styles = StyleSheet.create ({
+  imageContainer:{
+    flex:0.45,
+    marginTop:20,
+    justifyContent:"center",
+    alignItems:"center"
+
+  },
+})
