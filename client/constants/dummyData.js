@@ -1,10 +1,13 @@
 import { icons, images } from "./";
 
 const myProfile = {
+  id:"1",
   name: "Hiep Nguyen",
+  role:"admin", //or buyer/seller
   profile_image: images.profile,
   address: "No. 3145, Cockrell Ave, DFW - 76109",
 };
+
 
 const categories = [
   {
@@ -24,26 +27,28 @@ const categories = [
   },
 ];
 
+
+//seller: post item
+
+//input fields: item name, brief, description, price, image(url string), 
+
 const denim_jacket = {
   id: 1,
   name: "PRINTED DENIM JACKET",
   brief:"Cropped street-style",
   description:
     "Jacket with a lapel collar and long sleeves with buttoned cuffs. Chest flap pockets. Contrast all-over print. Button-up front fastening.",
-
   categories: [1, 2],
   price: 149.99,
-  //calories: 78,
-  //isFavourite: true,
   image: require("../assets/dummyData/Zara/printed_denim_jacket.jpeg"),
   link:"https://www.zara.com/vn/en/printed-denim-jacket---special-edition-p07215431.html?v1=161703849"
 };
+
 
 const linen_blend_suit_blazer = {
     id: 2,
     name: "LINEN BLEND BLAZER",
     brief:"Smart casual wear",
-
     description:
       "Blazer with a notched lapel collar and long sleeves with buttoned cuffs. Flap pockets at the hip and inside pocket detail. Back vents. Front button fastening.",
     categories: [1, 2],
