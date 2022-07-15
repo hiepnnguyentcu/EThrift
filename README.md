@@ -7,8 +7,6 @@ EThrift is a role-based fashion marketplace mobile application with friendly use
 - Seller: can create a post with photos and information about the item, make sales transactions.
 
 **Tech Stack:**
-
-
     - Front-end: React Native, ReAnimated 2, Expo, TypeScript, Axios.
 	- Back-end: Node.JS, Express.JS, MongoDB, Heroku.
 	- Security: JWT*, accessToken - refreshToken.
