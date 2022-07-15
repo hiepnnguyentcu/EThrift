@@ -20,3 +20,17 @@ EThrift is a role-based fashion marketplace mobile application with friendly use
  - Back-end Developer: Binh Pham Tuan - Budapest University of Technology and Economics 
 
 
+**DEMO**
+
+
+<img src="https://github.com/hiepnnguyentcu/EThrift/blob/a2892c423a5f4b5747a27b8899689cd186d481cd/client/demo/E1.gif" title="Databay showcase gif" width="300"/>
+
+<img src="https://github.com/hiepnnguyentcu/EThrift/blob/a2892c423a5f4b5747a27b8899689cd186d481cd/client/demo/E2.gif" title="Databay showcase gif" width="300"/>
+
+
+<img src="https://github.com/hiepnnguyentcu/EThrift/blob/a2892c423a5f4b5747a27b8899689cd186d481cd/client/demo/E3.gif" title="Databay showcase gif" width="300"/>
+
+
+<img src="https://github.com/hiepnnguyentcu/EThrift/blob/a2892c423a5f4b5747a27b8899689cd186d481cd/client/demo/E4.gif" title="Databay showcase gif" width="300"/>
+
+
