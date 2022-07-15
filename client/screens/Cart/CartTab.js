@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text } from "react-native";
 
-const CartTab = () => {
+const CartTab = ({navigation}) => {
   return (
     <View style={{
         flex: 1,
