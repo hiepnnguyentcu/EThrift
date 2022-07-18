@@ -126,7 +126,7 @@ const ItemDetail = ({ route, navigation }) => {
               justifyContent:"center",
               flexDirection:"row",
             }}
-            onPress={()=> navigation.navigate('Cart')}
+            onPress={()=> alert("Added to cart!")}
           >
           <Icons name="shopping-bag" size={30} color="white"/>
           <Text style={{color:COLORS.white, marginLeft:10, ...FONTS.body3, fontWeight:"bold"}}>Add to card</Text>
