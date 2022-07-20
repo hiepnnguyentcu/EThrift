@@ -5,6 +5,9 @@ import IconButton from "./IconButton";
 import TwoPointSlider from "./TwoPointSlider";
 import TextButton from "./TextButton";
 import TextIconButton from "./TextIconButton";
+import StepperInput from "./StepperInput";
+import LineDivider from "./LineDivider";
+import SwipeButton from "./SlideButton";
 export {
     Header,
     HorizontalCard,
@@ -12,6 +15,9 @@ export {
     IconButton,
     TwoPointSlider,
     TextButton,
-    TextIconButton
+    TextIconButton,
+    StepperInput,
+    LineDivider,
+    SwipeButton
 
 }

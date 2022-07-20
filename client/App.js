@@ -18,7 +18,6 @@ const App = () => {
     <Provider store={store}>
       <NavigationContainer>
         <CustomDrawer/>
-        
       </NavigationContainer>
     </Provider>
   );
