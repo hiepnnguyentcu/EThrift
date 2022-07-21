@@ -38,7 +38,7 @@ EThrift is a role-based fashion marketplace mobile application with friendly use
 </p>
 
 <p float="left">
-	<img src="https://github.com/hiepnnguyentcu/EThrift/blob/a2892c423a5f4b5747a27b8899689cd186d481cd/client/demo/E5.gif" title="Item Detail View" width="400"/>
+	<img src="https://github.com/hiepnnguyentcu/EThrift/blob/bb5c49032e049e388033d7880b96d812eaf76342/client/demo/E5.gif" title="Cart View" width="400"/>
 </p>
 
 
