@@ -84,8 +84,7 @@ const linen_blend_suit_blazer = {
       "Relaxed-fit shirt made of lyocell fabric. Camp collar and short sleeves. Chest patch pocket. Side vents at the hem. Button-up front.",
     categories: [1, 2],
     price: 59.99,
-    //calories: 78,
-    //isFavourite: true,
+    
     image: require("../assets/dummyData/Zara/lyocell_shirt.jpeg"),
     link: "https://www.zara.com/vn/en/lyocell-shirt-p07545245.html?v1=195972464&v2=2112866"
   };
@@ -189,7 +188,9 @@ const myCart = [
   {
       ...lyocell_shirt,
       qty: 1
-  }
+  },
+  
+  
 ]
 
 

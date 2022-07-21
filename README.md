@@ -15,7 +15,6 @@ EThrift is a role-based fashion marketplace mobile application with friendly use
 	- Tools: Postman, VSCode.
   
  **Contributor**
- - UI/UX Designer: Kien Nguyen Hieu Nho - Texas Christian University 
  - Front-end Developer: Hiep (Henry) Nguyen - Texas Christian University 
  - Back-end Developer: Binh Pham Tuan - Budapest University of Technology and Economics 
 

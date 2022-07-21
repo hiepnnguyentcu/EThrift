@@ -59,7 +59,7 @@ const SwipeButton = ({ onToggle }) => {
         opacity: interpolate(
           X.value,
           InterpolateXInput,
-          [0.8, 0],
+          [1, 0],
           Extrapolate.CLAMP
         ),
         transform: [
