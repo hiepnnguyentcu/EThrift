@@ -11,7 +11,12 @@ import { SwipeListView } from "react-native-swipe-list-view";
 import { COLORS, dummyData, FONTS, icons, SIZES } from "../../constants";
 import { useState } from "react";
 import { StyleSheet } from "react-native";
-import { IconButton, LineDivider, StepperInput,  } from "../../components";
+import {
+  IconButton,
+  LineDivider,
+  StepperInput,
+  SwipeButton,
+} from "../../components";
 
 const CartTab = ({ navigation }) => {
   const [myCartList, setMyCartList] = useState(dummyData.myCart);
@@ -157,8 +162,8 @@ const CartTab = ({ navigation }) => {
 
   function renderTotal() {
     return (
-      <View>
-        <View style={{ flexDirection: "row",}}>
+      <View style={{ marginTop: 40 }}>
+        <View style={{ flexDirection: "row" }}>
           <Text
             style={{
               marginLeft: 34,
@@ -172,7 +177,7 @@ const CartTab = ({ navigation }) => {
           <Text
             style={{
               marginLeft: 150,
-              marginTop:26,
+              marginTop: 26,
               ...FONTS.body2,
               fontWeight: "bold",
               color: "black",
@@ -181,8 +186,9 @@ const CartTab = ({ navigation }) => {
             $350
           </Text>
         </View>
-
-        
+        <View style={{justifyContent:"center", alignItems:"center", marginTop:10}}>
+          <SwipeButton />
+        </View>
       </View>
     );
   }

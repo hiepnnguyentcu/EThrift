@@ -7,7 +7,7 @@ import TextButton from "./TextButton";
 import TextIconButton from "./TextIconButton";
 import StepperInput from "./StepperInput";
 import LineDivider from "./LineDivider";
-import SwipeButton from "./SlideButton";
+import SwipeButton from "./SwipeButton";
 export {
     Header,
     HorizontalCard,

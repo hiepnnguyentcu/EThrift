@@ -5,7 +5,7 @@ const menu = require("../assets/icons/menu.png");
 const search = require("../assets/icons/search.png");
 const filter = require("../assets/icons/filter.png");
 const delete_icon = require("../assets/icons/delete.png");
-
+const arrow = require("../assets/icons/arrow.png")
 const down_arrow = require("../assets/icons/down_arrow.png");
 const favourite = require("../assets/icons/favourite.png");
 const burger = require("../assets/icons/burger.png");
@@ -63,6 +63,7 @@ const navigator1 = require("../assets/icons/navigator1.png");
 
 export default {
   apple,
+  arrow,
   back,
   coupon,
   cross,
