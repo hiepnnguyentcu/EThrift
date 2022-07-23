@@ -18,6 +18,7 @@ export const COLORS = {
   gray: "#898B9A",
   gray2: "#BBBDC1",
   gray3: "#CFD0D7",
+  lightGray1_new:"#666666",
   lightGray1: "#DDDDDD",
   lightGray2: "#F5F5F8",
   white2: "#FBFBFB",
