@@ -120,7 +120,18 @@ function validateUser(user) {
   return schema.validate(user);
 }
 
+function validateUserCreatedByAdmin(user) {
+  const schema = Joi.object({
+    email: Joi.string().min(5).max(255).required().email(),
+    handle: Joi.string().min(5).max(255).required(),
+    password: Joi.string().min(5).max(1024).required(),
+    role: Joi.number().integer().min(ROLES.ADMIN_ID).max(ROLES.SELLER_ID),
+  });
+  return schema.validate(user);
+}
+
 const User = model("Users", userSchema);
 
 exports.User = User;
 exports.validateUser = validateUser;
+exports.validateUserCreatedByAdmin = validateUserCreatedByAdmin;
