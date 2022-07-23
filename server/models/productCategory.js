@@ -8,11 +8,34 @@ const productCategorySchema = new Schema({
     type: String,
     required: true,
   },
+  image: {
+    type: String,
+    required: true,
+  },
 });
+
+productCategorySchema.methods.getCategoryData = function () {
+  return {
+    id: this._id,
+    name: this.name,
+    image: this.image,
+  };
+};
+
+productCategorySchema.methods.getBriefCategoryData = function () {
+  return {
+    name: this.name,
+    image: this.image,
+  };
+};
 
 const validateProductCategory = function (productCategory) {
   const schema = Joi.object({
-    name: Joi.string(),
+    name: Joi.string().required(),
+    image: Joi.string().domain({
+      allowFullyQualified: true,
+      allowUnicode: true,
+    }),
   });
 
   return schema.validate(productCategory);
