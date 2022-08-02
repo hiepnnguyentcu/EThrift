@@ -18,7 +18,7 @@ EThrift is a role-based fashion marketplace mobile application with friendly use
 **Contributor**
 
 - Front-end Developer: Hiep (Henry) Nguyen - Texas Christian University
-- Back-end Developer: Binh Pham Tuan - Budapest University of Technology and Economics
+- Back-end Developer: Binh Pham Tuan - Budapest University of Tecahnology and Economics
 
 **DEMO:**
 

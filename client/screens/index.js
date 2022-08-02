@@ -15,6 +15,12 @@ import Favourite from './Favourite/Favourite';
 import Notification from './Notification/Notification';
 
 
+//Onboardings
+import Onboard from './Onboarding/Onboard';
+import Login from './Onboarding/Login';
+import SignUp from './Onboarding/SignUp';
+
+
 //MyWallet
 
-export { Home, Search, CartTab, Favourite, Notification, FilterModal   };
+export { Home, Search, CartTab, Favourite, Notification, FilterModal, Onboard, Login, SignUp   };
