@@ -1,5 +1,8 @@
 import { View, Text, ImageBackground, Image, StyleSheet } from "react-native";
 import { TextButton } from "../../components";
+import { SvgUri } from "react-native-svg";
+
+import logos from "../../constants/logo";
 
 const Onboard = ({ navigation }) => {
   return (
@@ -10,6 +13,8 @@ const Onboard = ({ navigation }) => {
       resizeMode="cover"
       style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
     >
+        <SvgUri width="100%" height="100%" uri={logos.logo_dark_transparent} />
+
       <TextButton
         label={"Login"}
         labelStyle={styles.label}
@@ -35,7 +40,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     alignSelf: "center",
     backgroundColor: "white",
-    top: 250,
+    top: -250,
     marginTop: 20,
   },
   label: {

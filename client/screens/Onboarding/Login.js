@@ -9,13 +9,59 @@ import {
 import { TextButton } from "../../components";
 import { COLORS, FONTS } from "../../constants";
 import { useState } from "react";
+import { SvgUri } from "react-native-svg";
+import logos from "../../constants/logo";
 
 const Login = ({ navigation }) => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  console.log(email);
+  console.log(password);
   return (
-    <View style={{ flex: 1, justifyContent: "center" }}>
-      <View style={{ marginLeft: "10%" }}>
-        {renderText()}
-        {renderButton()}
+    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+      <SvgUri
+        style={{ marginTop: "-60%" }}
+        width="100%"
+        height="100%"
+        uri={logos.logo_light_transparent}
+      />
+
+      <View style={{ top: -300, marginLeft: "-20%" }}>
+        <Text style={{ fontWeight: "bold", ...FONTS.h2 }}>Welcome!</Text>
+        <Text style={{ ...FONTS.body4, color: COLORS.lightGray1_new }}>
+          Please login or sign up to continue{" "}
+        </Text>
+
+        <View style={{ marginTop: 60 }}>
+          <View>
+            <Text style={{ fontWeight: "bold", ...FONTS.h3 }}>Email</Text>
+            <TextInput style={{ ...FONTS.h3 }} onChangeText={setEmail} />
+            <View
+              style={{
+                height: 1,
+                width: "135%",
+                backgroundColor: COLORS.lightGray1_new,
+              }}
+            ></View>
+          </View>
+
+          <View style={{ marginTop: 20 }}>
+            <Text style={{ fontWeight: "bold", ...FONTS.h3 }}>Password</Text>
+            <TextInput
+              style={{ ...FONTS.h3 }}
+              onChangeText={setPassword}
+              secureTextEntry={true}
+            />
+            <View
+              style={{
+                height: 1,
+                width: "135%",
+                backgroundColor: COLORS.lightGray1_new,
+              }}
+            ></View>
+          </View>
+        </View>
       </View>
 
       <TextButton
@@ -24,64 +70,11 @@ const Login = ({ navigation }) => {
         buttonContainerStyle={styles.buttonContainer}
         onPress={() => navigation.navigate("Login")}
       />
-
-      
     </View>
   );
 };
 
 export default Login;
-
-function renderText() {
-  return (
-    <View>
-      <Text style={{ fontWeight: "bold", ...FONTS.h2 }}>Welcome!</Text>
-      <Text style={{ ...FONTS.body4, color: COLORS.lightGray1_new }}>
-        Please login or sign up to continue{" "}
-      </Text>
-    </View>
-  );
-}
-
-function renderButton() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-
-  console.log(email);
-  console.log(password);
-
-  return (
-    <View style={{ marginTop: 60 }}>
-      <View>
-        <Text style={{ fontWeight: "bold", ...FONTS.h3 }}>Email</Text>
-        <TextInput style={{ ...FONTS.h3 }} onChangeText={setEmail} />
-        <View
-          style={{
-            height: 1,
-            width: "90%",
-            backgroundColor: COLORS.lightGray1_new,
-          }}
-        ></View>
-      </View>
-
-      <View style={{ marginTop: 20 }}>
-        <Text style={{ fontWeight: "bold", ...FONTS.h3 }}>Password</Text>
-        <TextInput
-          style={{ ...FONTS.h3 }}
-          onChangeText={setPassword}
-          secureTextEntry={true}
-        />
-        <View
-          style={{
-            height: 1,
-            width: "90%",
-            backgroundColor: COLORS.lightGray1_new,
-          }}
-        ></View>
-      </View>
-    </View>
-  );
-}
 
 const styles = StyleSheet.create({
   buttonContainer: {
@@ -90,7 +83,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     alignSelf: "center",
     backgroundColor: "black",
-    top: 50,
+    top: -150,
     marginTop: 20,
   },
   label: {
