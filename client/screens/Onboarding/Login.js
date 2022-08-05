@@ -5,6 +5,8 @@ import {
   Image,
   StyleSheet,
   TextInput,
+  TouchableWithoutFeedback,
+  Keyboard
 } from "react-native";
 import { TextButton } from "../../components";
 import { COLORS, FONTS } from "../../constants";
@@ -19,58 +21,60 @@ const Login = ({ navigation }) => {
   console.log(email);
   console.log(password);
   return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <SvgUri
-        style={{ marginTop: "-60%" }}
-        width="100%"
-        height="100%"
-        uri={logos.logo_light_transparent}
-      />
+    <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
+      <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+        <SvgUri
+          style={{ marginTop: "-60%" }}
+          width="100%"
+          height="100%"
+          uri={logos.logo_light_transparent}
+        />
 
-      <View style={{ top: -300, marginLeft: "-20%" }}>
-        <Text style={{ fontWeight: "bold", ...FONTS.h2 }}>Welcome!</Text>
-        <Text style={{ ...FONTS.body4, color: COLORS.lightGray1_new }}>
-          Please login or sign up to continue{" "}
-        </Text>
+        <View style={{ top: -300, marginLeft: "-20%" }}>
+          <Text style={{ fontWeight: "bold", ...FONTS.h2 }}>Welcome!</Text>
+          <Text style={{ ...FONTS.body4, color: COLORS.lightGray1_new }}>
+            Please login or sign up to continue{" "}
+          </Text>
 
-        <View style={{ marginTop: 60 }}>
-          <View>
-            <Text style={{ fontWeight: "bold", ...FONTS.h3 }}>Email</Text>
-            <TextInput style={{ ...FONTS.h3 }} onChangeText={setEmail} />
-            <View
-              style={{
-                height: 1,
-                width: "135%",
-                backgroundColor: COLORS.lightGray1_new,
-              }}
-            ></View>
-          </View>
+          <View style={{ marginTop: 60 }}>
+            <View>
+              <Text style={{ fontWeight: "bold", ...FONTS.h3 }}>Email</Text>
+              <TextInput style={{ ...FONTS.h3 }} onChangeText={setEmail} />
+              <View
+                style={{
+                  height: 1,
+                  width: "135%",
+                  backgroundColor: COLORS.lightGray1_new,
+                }}
+              ></View>
+            </View>
 
-          <View style={{ marginTop: 20 }}>
-            <Text style={{ fontWeight: "bold", ...FONTS.h3 }}>Password</Text>
-            <TextInput
-              style={{ ...FONTS.h3 }}
-              onChangeText={setPassword}
-              secureTextEntry={true}
-            />
-            <View
-              style={{
-                height: 1,
-                width: "135%",
-                backgroundColor: COLORS.lightGray1_new,
-              }}
-            ></View>
+            <View style={{ marginTop: 20 }}>
+              <Text style={{ fontWeight: "bold", ...FONTS.h3 }}>Password</Text>
+              <TextInput
+                style={{ ...FONTS.h3 }}
+                onChangeText={setPassword}
+                secureTextEntry={true}
+              />
+              <View
+                style={{
+                  height: 1,
+                  width: "135%",
+                  backgroundColor: COLORS.lightGray1_new,
+                }}
+              ></View>
+            </View>
           </View>
         </View>
-      </View>
 
-      <TextButton
-        label={"Login"}
-        labelStyle={styles.label}
-        buttonContainerStyle={styles.buttonContainer}
-        onPress={() => navigation.navigate("Login")}
-      />
-    </View>
+        <TextButton
+          label={"Login"}
+          labelStyle={styles.label}
+          buttonContainerStyle={styles.buttonContainer}
+          onPress={() => navigation.navigate("Login")}
+        />
+      </View>
+    </TouchableWithoutFeedback>
   );
 };
 

@@ -8,7 +8,7 @@ const Onboard = ({ navigation }) => {
   return (
     <ImageBackground
       source={{
-        uri: "https://user-images.githubusercontent.com/43158356/182350291-d9e0a00d-9677-481c-8c52-9abf66f4a2fd.jpeg",
+        uri: "https://user-images.githubusercontent.com/43158356/183019763-8522f1d1-65f6-489e-a47b-8cfe3cb8eb55.jpeg",
       }}
       resizeMode="cover"
       style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
