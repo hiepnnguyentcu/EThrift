@@ -38,15 +38,15 @@ EThrift is a role-based fashion marketplace mobile application with friendly use
 **Buyers' User-Interface**
 
 <p float="left">
-	<img src="https://github.com/hiepnnguyentcu/EThrift/blob/a2892c423a5f4b5747a27b8899689cd186d481cd/client/demo/E1.gif" title="Home Screen" width="300"/>
-	<img src="https://github.com/hiepnnguyentcu/EThrift/blob/a2892c423a5f4b5747a27b8899689cd186d481cd/client/demo/E2.gif" title="Search Filter" width="300"/>
-	<img src="https://github.com/hiepnnguyentcu/EThrift/blob/a2892c423a5f4b5747a27b8899689cd186d481cd/client/demo/E3.gif" title="Item Detail View" width="300"/>
+	<img src="https://github.com/hiepnnguyentcu/EThrift/blob/a2892c423a5f4b5747a27b8899689cd186d481cd/client/demo/E1.gif" title="Home Screen" width="280"/>
+	<img src="https://github.com/hiepnnguyentcu/EThrift/blob/a2892c423a5f4b5747a27b8899689cd186d481cd/client/demo/E2.gif" title="Search Filter" width="280"/>
+	<img src="https://github.com/hiepnnguyentcu/EThrift/blob/a2892c423a5f4b5747a27b8899689cd186d481cd/client/demo/E3.gif" title="Item Detail View" width="280"/>
 </p>
 
 
 <p float="left">
-	<img src="https://github.com/hiepnnguyentcu/EThrift/blob/a2892c423a5f4b5747a27b8899689cd186d481cd/client/demo/E4.gif" title="Item Detail View" width="300"/>
-	<img src="https://github.com/hiepnnguyentcu/EThrift/blob/bb5c49032e049e388033d7880b96d812eaf76342/client/demo/E5.gif" title="Cart View" width="300"/>
+	<img src="https://github.com/hiepnnguyentcu/EThrift/blob/a2892c423a5f4b5747a27b8899689cd186d481cd/client/demo/E4.gif" title="Item Detail View" width="280"/>
+	<img src="https://github.com/hiepnnguyentcu/EThrift/blob/bb5c49032e049e388033d7880b96d812eaf76342/client/demo/E5.gif" title="Cart View" width="280"/>
 </p>
 
 
