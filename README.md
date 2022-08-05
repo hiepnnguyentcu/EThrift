@@ -28,9 +28,9 @@ EThrift is a role-based fashion marketplace mobile application with friendly use
 **Onboarding: Sign Up and Log In**
 
 <p float="left">
-	<img src="https://user-images.githubusercontent.com/43158356/183021592-9a24584e-74ae-46db-b0cf-91586ab3bd55.PNG" title="Onboarding" width="300"/>
-	<img src="https://user-images.githubusercontent.com/43158356/183021715-50197439-aa9d-4501-97d5-fa1b23695a26.PNG" title="Sign In" width="300"/>
-	<img src="https://user-images.githubusercontent.com/43158356/183021777-ac85a8cc-7c0e-49bd-8ad8-1f925ec75da0.PNG" title="Sign Up" width="300"/>
+	<img src="https://user-images.githubusercontent.com/43158356/183021592-9a24584e-74ae-46db-b0cf-91586ab3bd55.PNG" title="Onboarding" width="280"/>
+	<img src="https://user-images.githubusercontent.com/43158356/183021715-50197439-aa9d-4501-97d5-fa1b23695a26.PNG" title="Sign In" width="280"/>
+	<img src="https://user-images.githubusercontent.com/43158356/183021777-ac85a8cc-7c0e-49bd-8ad8-1f925ec75da0.PNG" title="Sign Up" width="280"/>
 </p>
 
 <p></p>
