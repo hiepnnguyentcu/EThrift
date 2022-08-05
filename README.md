@@ -2,6 +2,8 @@
 
 EThrift is a role-based fashion marketplace mobile application with friendly user-interface for easy buy and trade!.
 
+(The presented images used to build the MVP of ETHRIFT belong to Zara)
+
 **Role-based**
 
 - Admin (admin): access buyer and seller past transactions, access user information and create/delete accounts.
