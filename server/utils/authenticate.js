@@ -24,7 +24,7 @@ exports.authenticateJWT = async function authenticateJWT(req, res, next) {
       let tokenData = jwt.verify(token, SECRET);
 
       if (tokenData.type === "REFRESH") {
-        return res.status(400).json({ message: "Wrong type of Token." });
+        return res.status(400).json({ message: "Wrong type of Access Token." });
       }
 
       req.user = {
@@ -39,6 +39,39 @@ exports.authenticateJWT = async function authenticateJWT(req, res, next) {
     }
   } else {
     return res.status(400).json({ message: "No JWT detected." });
+  }
+};
+
+exports.authenticateRefreshToken = async function authenticateRefreshToken(
+  req,
+  res,
+  next
+) {
+  const token = getTokenFromHeader(req);
+  if (token) {
+    try {
+      let tokenData = jwt.verify(token, SECRET);
+
+      if (tokenData.type === "ACCESS") {
+        return res
+          .status(400)
+          .json({ message: "Wrong type of Refresh Token." });
+      }
+
+      req.user = {
+        email: tokenData.email,
+        role: tokenData.role,
+        handle: tokenData.handle,
+      };
+
+      next();
+    } catch (err) {
+      return res
+        .status(400)
+        .json({ message: "Your Refresh Token is invalid." });
+    }
+  } else {
+    return res.status(400).json({ message: "No Refresh Token detected." });
   }
 };
 

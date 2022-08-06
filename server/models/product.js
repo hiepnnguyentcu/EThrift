@@ -70,11 +70,8 @@ function validateProduct(product) {
     brief: Joi.string().max(256).required(),
     description: Joi.string().max(1024).required(),
     sellerHandle: Joi.string().max(256).required(),
-    price: Joi.number().positive().precision(2),
-    image: Joi.string().domain({
-      allowFullyQualified: true,
-      allowUnicode: true,
-    }),
+    price: Joi.number().positive().precision(2).required(),
+    image: Joi.string().uri().required(),
     categories: Joi.array().items(Joi.string()).unique(),
   });
   return schema.validate(product);
