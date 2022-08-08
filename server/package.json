@@ -4,7 +4,8 @@
   "description": "EThrift server",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon"
   },
   "author": "",
   "license": "ISC",

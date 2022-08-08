@@ -35,6 +35,12 @@ const productSchema = new Schema({
   categories: {
     type: [String],
   },
+  sizes: {
+    type: [String],
+  },
+  variations: {
+    type: [String],
+  },
 });
 
 productSchema.methods.getProductData = function () {
@@ -46,6 +52,8 @@ productSchema.methods.getProductData = function () {
     price: this.price,
     image: this.image,
     categories: this.categories,
+    sizes: this.sizes,
+    variations: this.variations,
   };
 
   return productData;
@@ -59,6 +67,8 @@ productSchema.methods.getProductBrief = function () {
     price: this.price,
     image: this.image,
     categories: this.categories,
+    variations: this.variations,
+    sizes: this.sizes,
   };
 
   return productBrief;
@@ -73,6 +83,8 @@ function validateProduct(product) {
     price: Joi.number().positive().precision(2).required(),
     image: Joi.string().uri().required(),
     categories: Joi.array().items(Joi.string()).unique(),
+    sizes: Joi.array().items(Joi.string().allow("")).unique(),
+    variations: Joi.array().items(Joi.string().allow("")).unique(),
   });
   return schema.validate(product);
 }
