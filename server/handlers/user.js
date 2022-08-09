@@ -158,10 +158,22 @@ exports.getAllUsers = async (req, res) => {
     return {
       userData: doc.getUserData(),
       tokens: {
-        refreshToken: user.refreshToken,
+        refreshToken: doc.refreshToken,
       },
     };
   });
 
   return res.status(200).json(responseData);
+};
+
+exports.getJWT = async (req, res) => {
+  try {
+    const user = await User.findOne({ handle: req.user.handle }).exec();
+
+    const JWT = user.generateJWT();
+
+    return res.status(200).json({ accessToken: JWT });
+  } catch {
+    return res.status(500).json({ message: "Something went wrong" });
+  }
 };

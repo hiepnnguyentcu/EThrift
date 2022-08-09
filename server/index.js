@@ -4,6 +4,7 @@ const initUserRouter = require("./routers/userRouter");
 const initProductRouter = require("./routers/productRouter");
 const initProductCategoryRouter = require("./routers/productCategoryRouter");
 const initUserAddressRouter = require("./routers/userAddressRouter");
+const initOrderRouter = require("./routers/orderRouter");
 
 const initDatabase = require("./utils/mongoose");
 
@@ -13,6 +14,7 @@ initUserRouter(app);
 initProductRouter(app);
 initProductCategoryRouter(app);
 initUserAddressRouter(app);
+initOrderRouter(app);
 
 let port = process.env.PORT || 3000;
 

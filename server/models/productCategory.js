@@ -32,10 +32,7 @@ productCategorySchema.methods.getBriefCategoryData = function () {
 const validateProductCategory = function (productCategory) {
   const schema = Joi.object({
     name: Joi.string().required(),
-    image: Joi.string().domain({
-      allowFullyQualified: true,
-      allowUnicode: true,
-    }),
+    image: Joi.string().uri().required(),
   });
 
   return schema.validate(productCategory);

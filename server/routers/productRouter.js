@@ -10,10 +10,13 @@ const { authenticateJWT, allowRole } = require("../utils/authenticate");
 const { ROLES } = require("../constants/role");
 
 module.exports = (app) => {
+  // Get product with Product ID
   app.get("/product/:productID", getProduct);
 
+  // Get All Product
   app.get("/products", getAllProduct);
 
+  // Upload a Product
   app.post(
     "/product",
     authenticateJWT,
@@ -21,10 +24,11 @@ module.exports = (app) => {
     createProduct
   );
 
+  // Delete a Product
   app.delete(
     "/product/:id",
     authenticateJWT,
-    allowRole(ROLES.ADMIN_ID, ROLES.BUYER_ID),
+    allowRole(ROLES.ADMIN_ID, ROLES.SELLER_ID),
     deleteProduct
   );
 };

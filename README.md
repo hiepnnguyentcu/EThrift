@@ -3,6 +3,10 @@
 EThrift is a role-based fashion marketplace mobile application with friendly user-interface for easy buy and trade!.
 
 (The presented images used to build the MVP of ETHRIFT belong to Zara)
+<img src="https://user-images.githubusercontent.com/43158356/183240680-e3279dc5-ef48-4ed1-9461-2d6e5ce9735d.png" title="Banner" width="750"/>
+
+
+
 
 **Role-based**
 
@@ -20,7 +24,7 @@ EThrift is a role-based fashion marketplace mobile application with friendly use
 **Contributor**
 
 - Front-end Developer: Hiep (Henry) Nguyen - Texas Christian University
-- Back-end Developer: Binh Pham Tuan - Budapest University of Tecahnology and Economics
+- Back-end Developer: Binh Pham Tuan - Budapest University of Technology and Economics
 
 **DEMO:**
 
@@ -28,9 +32,9 @@ EThrift is a role-based fashion marketplace mobile application with friendly use
 **Onboarding: Sign Up and Log In**
 
 <p float="left">
-	<img src="https://user-images.githubusercontent.com/43158356/183021592-9a24584e-74ae-46db-b0cf-91586ab3bd55.PNG" title="Onboarding" width="300"/>
-	<img src="https://user-images.githubusercontent.com/43158356/183021715-50197439-aa9d-4501-97d5-fa1b23695a26.PNG" title="Sign In" width="300"/>
-	<img src="https://user-images.githubusercontent.com/43158356/183021777-ac85a8cc-7c0e-49bd-8ad8-1f925ec75da0.PNG" title="Sign Up" width="300"/>
+	<img src="https://user-images.githubusercontent.com/43158356/183021592-9a24584e-74ae-46db-b0cf-91586ab3bd55.PNG" title="Onboarding" width="250"/>
+	<img src="https://user-images.githubusercontent.com/43158356/183021715-50197439-aa9d-4501-97d5-fa1b23695a26.PNG" title="Sign In" width="250"/>
+	<img src="https://user-images.githubusercontent.com/43158356/183021777-ac85a8cc-7c0e-49bd-8ad8-1f925ec75da0.PNG" title="Sign Up" width="250"/>
 </p>
 
 <p></p>
@@ -38,15 +42,15 @@ EThrift is a role-based fashion marketplace mobile application with friendly use
 **Buyers' User-Interface**
 
 <p float="left">
-	<img src="https://github.com/hiepnnguyentcu/EThrift/blob/a2892c423a5f4b5747a27b8899689cd186d481cd/client/demo/E1.gif" title="Home Screen" width="300"/>
-	<img src="https://github.com/hiepnnguyentcu/EThrift/blob/a2892c423a5f4b5747a27b8899689cd186d481cd/client/demo/E2.gif" title="Search Filter" width="300"/>
-	<img src="https://github.com/hiepnnguyentcu/EThrift/blob/a2892c423a5f4b5747a27b8899689cd186d481cd/client/demo/E3.gif" title="Item Detail View" width="300"/>
+	<img src="https://github.com/hiepnnguyentcu/EThrift/blob/a2892c423a5f4b5747a27b8899689cd186d481cd/client/demo/E1.gif" title="Home Screen" width="250"/>
+	<img src="https://github.com/hiepnnguyentcu/EThrift/blob/a2892c423a5f4b5747a27b8899689cd186d481cd/client/demo/E2.gif" title="Search Filter" width="250"/>
+	<img src="https://github.com/hiepnnguyentcu/EThrift/blob/a2892c423a5f4b5747a27b8899689cd186d481cd/client/demo/E3.gif" title="Item Detail View" width="250"/>
 </p>
 
 
 <p float="left">
-	<img src="https://github.com/hiepnnguyentcu/EThrift/blob/a2892c423a5f4b5747a27b8899689cd186d481cd/client/demo/E4.gif" title="Item Detail View" width="300"/>
-	<img src="https://github.com/hiepnnguyentcu/EThrift/blob/bb5c49032e049e388033d7880b96d812eaf76342/client/demo/E5.gif" title="Cart View" width="300"/>
+	<img src="https://github.com/hiepnnguyentcu/EThrift/blob/a2892c423a5f4b5747a27b8899689cd186d481cd/client/demo/E4.gif" title="Item Detail View" width="250"/>
+	<img src="https://github.com/hiepnnguyentcu/EThrift/blob/bb5c49032e049e388033d7880b96d812eaf76342/client/demo/E5.gif" title="Cart View" width="250"/>
 </p>
 
 
