@@ -3,7 +3,6 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
 import CustomDrawer from "./navigation/CustomDrawer";
 import { OnboardingStackNavigator } from "./navigation/StackNavigator";
-import ItemDetail from "./screens/Fashion Items/ItemDetail";
 import { createStore, applyMiddleware } from "redux";
 import { Provider } from "react-redux";
 

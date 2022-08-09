@@ -6,20 +6,38 @@ import {
   StyleSheet,
   TextInput,
   TouchableWithoutFeedback,
-  Keyboard
+  Keyboard,
 } from "react-native";
 import { TextButton } from "../../components";
 import { COLORS, FONTS } from "../../constants";
 import { useState } from "react";
 import { SvgUri } from "react-native-svg";
 import logos from "../../constants/logo";
+import { LoginReq } from "../../requests/OnboardReq";
 
 const Login = ({ navigation }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  console.log(email);
-  console.log(password);
+  console.log("email: " + email);
+  console.log("password: " + password);
+/*
+  const onPress = async () => {
+    axios
+      .post("https://ethriftbe.herokuapp.com/signin", {
+        email: email,
+        password: password,
+      })
+      .then((response) => {
+        alert("success");
+        console.log(response.data);
+      })
+      .catch((error) => {
+        alert(error);
+      });
+  };
+  */
+
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
@@ -39,7 +57,11 @@ const Login = ({ navigation }) => {
           <View style={{ marginTop: 60 }}>
             <View>
               <Text style={{ fontWeight: "bold", ...FONTS.h3 }}>Email</Text>
-              <TextInput style={{ ...FONTS.h3 }} onChangeText={setEmail} />
+              <TextInput
+                style={{ ...FONTS.h3 }}
+                onChangeText={setEmail}
+                autoCapitalize='none'
+              />
               <View
                 style={{
                   height: 1,
@@ -55,6 +77,7 @@ const Login = ({ navigation }) => {
                 style={{ ...FONTS.h3 }}
                 onChangeText={setPassword}
                 secureTextEntry={true}
+                autoCapitalize='none'
               />
               <View
                 style={{
@@ -71,7 +94,7 @@ const Login = ({ navigation }) => {
           label={"Login"}
           labelStyle={styles.label}
           buttonContainerStyle={styles.buttonContainer}
-          onPress={() => navigation.navigate("Login")}
+          onPress={()=>LoginReq(email,password)}
         />
       </View>
     </TouchableWithoutFeedback>
