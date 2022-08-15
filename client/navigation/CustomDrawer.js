@@ -150,7 +150,6 @@ const CustomDrawerContent = ({ navigation, selectedTab, setSelectedTab }) => {
               backgroundColor: COLORS.lightGray1,
             }}
           ></View>
-
           <CustomDrawerItem label="Track Your Order" icon={icons.location} />
           <CustomDrawerItem label="Coupons" icon={icons.coupon} />
           <CustomDrawerItem label="Invite a Friend" icon={icons.profile} />
@@ -164,6 +163,8 @@ const CustomDrawerContent = ({ navigation, selectedTab, setSelectedTab }) => {
     </DrawerContentScrollView>
   );
 };
+
+
 
 const CustomDrawer = ({ selectedTab, setSelectedTab }) => {
   return (
@@ -195,12 +196,13 @@ const CustomDrawer = ({ selectedTab, setSelectedTab }) => {
       >
 
 
+
+
+
+      
         <Drawer.Screen name="MainLayout" options={{ headerShown: false }}>
           {(props) => <MainLayout {...props} />}
         </Drawer.Screen>
-
-
-
       </Drawer.Navigator>
     </View>
   );
