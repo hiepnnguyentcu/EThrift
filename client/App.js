@@ -1,7 +1,10 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
-import { MainStackNavigator, OnboardingStackNavigator } from "./navigation/StackNavigator";
+import {
+  MainStackNavigator,
+  OnboardingStackNavigator,
+} from "./navigation/StackNavigator";
 import { createStore, applyMiddleware } from "redux";
 import { Provider } from "react-redux";
 
@@ -18,7 +21,7 @@ const App = () => {
     <LoginProvider>
       <Provider store={store}>
         <NavigationContainer>
-          <MainStackNavigator />
+          <MainStackNavigator/>
         </NavigationContainer>
       </Provider>
     </LoginProvider>

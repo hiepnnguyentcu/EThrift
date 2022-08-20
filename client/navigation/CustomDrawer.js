@@ -194,12 +194,6 @@ const CustomDrawer = ({ selectedTab, setSelectedTab }) => {
           );
         }}
       >
-
-
-
-
-
-      
         <Drawer.Screen name="MainLayout" options={{ headerShown: false }}>
           {(props) => <MainLayout {...props} />}
         </Drawer.Screen>

@@ -42,15 +42,13 @@ const AdminStackNavigator = () => {
     <Stack.Navigator
       screenOptions={{headerShown: false}}>
         <Stack.Screen name="Home_admin" component={HomeScreen}/>
-
       </Stack.Navigator>
   )
 }
-
 const MainStackNavigator = () => {
   const {isLoggedIn} = useLogin()
   return(
-    isLoggedIn ? <CustomDrawer/> : <AdminStackNavigator/>
+    isLoggedIn ? <AdminStackNavigator/> : <CustomDrawer/>
   )
 }
 
