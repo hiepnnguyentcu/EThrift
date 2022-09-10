@@ -35,6 +35,8 @@ module.exports = function (app) {
    * @apiPermission buyer
    * @apiGroup Cart
    *
+   * @apiParam cartID ID of Cart
+   *
    * @apiHeader {String} authorization Buyer Access Token
    *
    * @apiBody {Object[]} products List of Products
@@ -60,7 +62,7 @@ module.exports = function (app) {
    * @apiPermission buyer admin
    * @apiGroup Cart
    *
-   * @apiParam {String} cartID ID of Order
+   * @apiParam {String} cartID ID of Cart
    *
    * @apiHeader {String} authorization Buyer or Admin Access Token
    *

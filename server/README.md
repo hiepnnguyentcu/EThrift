@@ -5,6 +5,11 @@ API Documentation for EThrift
 
 # Table of contents
 
+- [Cart](#Cart)
+  - [Create Cart](#Create-Cart)
+  - [Delete Order](#Delete-Order)
+  - [Get Carts Related to User Role and ID](#Get-Carts-Related-to-User-Role-and-ID)
+  - [Update Cart](#Update-Cart)
 - [Order](#Order)
   - [Create Order](#Create-Order)
   - [Delete Order](#Delete-Order)
@@ -33,6 +38,123 @@ API Documentation for EThrift
 
 ___
 
+
+# <a name='Cart'></a> Cart
+
+## <a name='Create-Cart'></a> Create Cart
+[Back to top](#top)
+
+```
+POST /order
+```
+
+### Headers - `Header`
+
+| Name    | Type      | Description                          |
+|---------|-----------|--------------------------------------|
+| authorization | `String` | <p>Buyer Access Token</p> |
+
+### Request Body
+
+| Name     | Type       | Description                           |
+|----------|------------|---------------------------------------|
+| seller | `String` | <p>Handle of Seller</p> |
+| products | `Object[]` | <p>List of Products</p> |
+| products.productID | `String` | <p>ID of Product</p> |
+| products.size | `String` | <p>Size of Product</p> |
+| products.variation | `String` | <p>Variation of Product</p> |
+| products.quantity | `String` | <p>Quantity of Product</p> |
+| products.note | `String` | <p>Note for Product</p> |
+### Success response
+
+#### Success response - `Success 200`
+
+| Name     | Type       | Description                           |
+|----------|------------|---------------------------------------|
+| cart | `Object` | <p>New Cart Data</p> |
+
+## <a name='Delete-Order'></a> Delete Order
+[Back to top](#top)
+
+```
+DELETE /cart/:cartID
+```
+
+### Headers - `Header`
+
+| Name    | Type      | Description                          |
+|---------|-----------|--------------------------------------|
+| authorization | `String` | <p>Buyer or Admin Access Token</p> |
+
+### Parameters - `Parameter`
+
+| Name     | Type       | Description                           |
+|----------|------------|---------------------------------------|
+| cartID | `String` | <p>ID of Cart</p> |
+### Success response
+
+#### Success response - `Success 200`
+
+| Name     | Type       | Description                           |
+|----------|------------|---------------------------------------|
+| cart | `Object` | <p>Deleted Cart Data</p> |
+
+## <a name='Get-Carts-Related-to-User-Role-and-ID'></a> Get Carts Related to User Role and ID
+[Back to top](#top)
+
+```
+GET /carts
+```
+
+### Headers - `Header`
+
+| Name    | Type      | Description                          |
+|---------|-----------|--------------------------------------|
+| authorization | `String` | <p>User Access Token</p> |
+### Success response
+
+#### Success response - `Success 200`
+
+| Name     | Type       | Description                           |
+|----------|------------|---------------------------------------|
+| orders | `Object[]` | <p>All Orders Related to User</p> |
+
+## <a name='Update-Cart'></a> Update Cart
+[Back to top](#top)
+
+```
+PATCH /order/:cartID
+```
+
+### Headers - `Header`
+
+| Name    | Type      | Description                          |
+|---------|-----------|--------------------------------------|
+| authorization | `String` | <p>Buyer Access Token</p> |
+
+### Parameters - `Parameter`
+
+| Name     | Type       | Description                           |
+|----------|------------|---------------------------------------|
+| cartID |  | <p>ID of Cart</p> |
+
+### Request Body
+
+| Name     | Type       | Description                           |
+|----------|------------|---------------------------------------|
+| products | `Object[]` | <p>List of Products</p> |
+| products.productID | `String` | <p>ID of Product</p> |
+| products.size | `String` | <p>Size of Product</p> |
+| products.variation | `String` | <p>Variation of Product</p> |
+| products.quantity | `String` | <p>Quantity of Product</p> |
+| products.note | `String` | <p>Note for Product</p> |
+### Success response
+
+#### Success response - `Success 200`
+
+| Name     | Type       | Description                           |
+|----------|------------|---------------------------------------|
+| cart | `Object` | <p>New Cart Data</p> |
 
 # <a name='Order'></a> Order
 
