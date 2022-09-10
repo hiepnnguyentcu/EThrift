@@ -5,11 +5,13 @@ const initProductRouter = require("./routers/productRouter");
 const initProductCategoryRouter = require("./routers/productCategoryRouter");
 const initUserAddressRouter = require("./routers/userAddressRouter");
 const initOrderRouter = require("./routers/orderRouter");
+const initCartRouter = require("./routers/cartRouter");
 
 const initDatabase = require("./utils/mongoose");
 
 initDatabase();
 
+initCartRouter(app);
 initUserRouter(app);
 initProductRouter(app);
 initProductCategoryRouter(app);

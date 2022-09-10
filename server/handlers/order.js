@@ -61,7 +61,6 @@ exports.deleteOrder = async function (req, res) {
 };
 
 // Get All Orders
-
 exports.getOrders = async function (req, res) {
   try {
     let role = req.user.role;
