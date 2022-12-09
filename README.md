@@ -25,7 +25,9 @@ EThrift is a role-based fashion marketplace mobile application with friendly use
 
 - Front-end Lead Developer/ Project Manager: Hiep (Henry) Nguyen - Texas Christian University
 - Back-end Lead Developer: Binh Pham Tuan - Budapest University of Technology and Economics
-- Team-mates: Kien Hieu Nguyen Nho, Pham Binh Vu, Tran Thanh Hai.
+- Team-mates: Kien Hieu Nguyen Nho, Pham Binh Vu, Tran Thanh Hai
+
+
 **DEMO:**
 
 
